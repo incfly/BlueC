@@ -1,0 +1,40 @@
+Description
+--------------------------------------------------------------------------
+This is my simple compiler. It performs lexical, grammar analysis, and then 
+emit the assembly code, dump the code into plain text. At last, the 
+assembly code is sended to assembly compiler "as" to generate object file.
+The linker 'ld' link obj file to executable file. 
+Basically, I finish the front-end and code-generation work. The executable 
+file generation is handled by system software. Because to output the 
+instruction to binary form and arrange the output file according to ELF 
+ABI rule is a trivial thing. I omitted that. :-(
+
+
+Language rule
+--------------------------------------------------------------------------
+The language can use/define variable, use conditional statement, define 
+and call function, even though it has a lot of contraints.
+
+To simplify the problem, I make a lots of contraints and assumptions. You
+may think it's unreasonable and weird. Well, it's just a piece of work 
+for fun. :-)
+
+In fold example/, there are several simple samples to show the language's 
+grammar and function.
+
+
+
+
+Other things
+--------------------------------------------------------------------------
+I previously planed to build a complete, independent compiler. But as  the
+process going on, I was busy with other affairs and found a lot of trivial
+thing to build the compiler by oneself. Finally it was born like this. 
+
+I am keen on the compiler techniques, operating system knowledge and other
+low level computer science related things. Glad to communicate with peers
+in these fields.
+
+Email: hujianfei258@gmail.com
+
+
